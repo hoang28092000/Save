@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài tập</title>
+</head>
+<button onclick="Tinhtime()">Nhập Time</button>
+<button onclick="TinhCV()"> Tính ChuVi HT</button>
+<button onclick="Bmoi()">Xét Bội</button>
+<Button onclick="ToanTuHCN()"> Tính Diện HCN</Button>
+
+<body>
+    <!-- Bài1 -->
+    <script>
+        function Tinhtime() {
+            let ngay = prompt("Nhập số ngày");
+            let thang = prompt("Nhập số tháng");
+            let nam = prompt("Nhập số năm")
+            let time = ngay + "-" + thang + "-" + nam;
+            alert(time);
+        }
+        // <!-- Bai2 --> -->
+        function TinhCV() {
+            let r = +prompt("Nhập bán kính");
+            let pi = 3.14;
+            let c = 2 * r * pi;
+
+            alert("Chu vi hình tròn là: " + c);
+
+        }
+        // bai3
+        function Bmoi(){
+            let a= +prompt(" Nhập số a");
+            let b= +prompt (" Nhập số b");
+            let c=  a % b ;
+            if(c=0){
+                alert( a +"  là bội số của " +b)
+            }else {
+                alert( a +" không là bội số của " + b)
+            }
+            }
+            // S HCN
+        function ToanTuHCN(){
+            let a= parseInt( prompt(" Nhập chiều dài"));
+            let b= parseInt(prompt("Nhập chiều rộng")) ;
+            let S= a* b;
+            document.write("Diện tích HCN là: "+ S);
+        
+        }
+        
+
+    </script>
+
+</body>
+
+</html>

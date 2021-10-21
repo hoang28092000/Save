@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lí Sinh Viên</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+
+<body>
+    <table id="list-students" class="list-students" border="1px">
+        <h3>Thông tin sinh viên</h3>
+    </table><br><br><br>
+
+    <div class="form-student">
+        <b>Thêm mới sinh viên</b><br><br>
+        <i>(*):Thông tin bắt buộc</i><br><br>
+
+        <label>Mã SV(*)</label>
+        <input type="text" id="maSV">
+        <span id="maSV-error" class="error"></span>
+        <br>
+
+        <label>Họ Tên(*)</label>
+        <input type="text" id="fullname">
+        <span id="fullname-error" class="error"></span>
+        <br>
+
+        <label>Tuổi(*)</label>
+        <input type="text" id="age">
+        <span id="age-error" class="error"></span>
+        <br>
+
+        <label>Giới Tính(*)</label>
+        <input type="radio" name="gender" id="male" value="true"> Nam
+        <input type="radio" name="gender" id="female " value="false"> Nữ
+        <span id="gender-error" class="error"></span>
+        <br>
+
+        <label></label>
+        <label>Địa Chỉ(*)</label>
+        <input type="text" id="address">
+        <span id="address-error" class="error"></span>
+        <br>
+
+        <button onclick="save()">Lưu lại</button>
+    </div>
+    <script src="./js/student.js"></script>
+    
+</body>
+
+</html>
